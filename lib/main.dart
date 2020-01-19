@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     ],
     animationDuration: Duration(
-      milliseconds: 500
+      milliseconds: 501
     ),
     onTap: (index) {
      
