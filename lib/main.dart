@@ -1,8 +1,8 @@
-import 'package:cavi/pages/flutterPages.dart';
-import 'package:cavi/pages/otherPage.dart';
-import 'package:cavi/pages/pageClients.dart';
-import 'package:cavi/pages/pagePlace.dart';
-import 'package:cavi/pages/pageProducts.dart';
+import 'package:cavi/pages/pageAccueil.dart';
+import 'package:cavi/pages/pageMaCave.dart';
+import 'package:cavi/pages/pageMetsVins.dart';
+import 'package:cavi/pages/pageMonprofil.dart';
+import 'package:cavi/pages/pageRecherche.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'themes/color.dart';
@@ -21,30 +21,30 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int pageIndex = 0;
 
 //Crée toutes les pages
-final PageProducts _listProducts = PageProducts();
-final PageClients _clients = new PageClients();
-final PagePlace _sites = new PagePlace();
-final FlutterPages _flutterPages = new FlutterPages();
-final OtherPage _otherPage = new OtherPage();
+final PageRecherche _pageRecherche = PageRecherche();
+final PageMaCave _pageMaCave = PageMaCave();
+final PageAccueil _pageAccueil = PageAccueil();
+final PageMetsVins _pageMetsVins = PageMetsVins();
+final PageMonProfil _pageMonProfil = PageMonProfil();
 
 
-Widget _showPage = new PageProducts();
+Widget _showPage = PageRecherche();
 Widget _pageChooser(int page){
   switch (page){
     case 0:
-    return _listProducts;
+    return _pageRecherche;
     break;
     case 1:
-    return _clients;
+    return _pageMaCave;
     break;
     case 2:
-    return _sites;
+    return _pageAccueil;
     break;
     case 3:
-    return _flutterPages;
+    return _pageMetsVins;
     break;
     case 4:
-    return _otherPage;
+    return _pageMonProfil;
     break;
     default:
     return new Container(

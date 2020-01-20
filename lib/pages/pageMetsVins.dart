@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class PageProducts extends StatelessWidget {
+class PageMetsVins extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Page Recherche", textScaleFactor: 2.0,)
+      child: Text("Page Mets Vins", textScaleFactor: 2.0,)
     );
   }
 }
