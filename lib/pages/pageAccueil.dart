@@ -37,7 +37,9 @@ class PageAccueil extends StatelessWidget {
                             color: SecondaryColor,
                             child: Column(
                               children: <Widget>[
-                                Row(children: <Widget>[
+                                Row(
+                                  
+                                  children: <Widget>[
                                   Container(
                                         width: 125.0,
                                         height: 125.0,
@@ -45,11 +47,11 @@ class PageAccueil extends StatelessWidget {
                                           color: Colors.white,
                                           shape: BoxShape.circle,
                                         ),
-                                        child: 
-                                        Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
                                           children: <Widget>[
-                                            CenterHorizontal(Text("34",style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold))),
+                                            CenterHorizontal(Text("34",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
                                             CenterHorizontal(Text("bouteilles",style: TextStyle(fontSize: 20)))
                                           ],
                                         ),
