@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class PageMonProfil extends StatelessWidget {
+class OtherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Page mon profil", textScaleFactor: 2.0,)
+      child: Text("Page Other", textScaleFactor: 2.0,)
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PagePalce extends StatelessWidget {
+class FlutterPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
