@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'themes/color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_login/flutter_login.dart';
 
 void main() => runApp(MaterialApp(home: BottomNavBar()));
 
@@ -76,7 +75,7 @@ Widget _pageChooser(int page){
           color: PrimaryColor,
           height: 60,
           items: <Widget>[
-            Icon(FontAwesomeIcons.search, size: 30, color:Colors.white),
+            Icon(Icons.home, size: 30, color:Colors.white),
             Icon(FontAwesomeIcons.wineBottle, size: 30, color:Colors.white),
             Icon(FontAwesomeIcons.home, size: 30, color:Colors.white),
             Icon(FontAwesomeIcons.utensils, size: 30, color:Colors.white),

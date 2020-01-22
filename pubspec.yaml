@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -38,10 +39,32 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  uses-material-design: true
+    # The following line ensures that the Material Icons font is
+    # included with your application, so that you can use the icons in
+    # the material Icons class.
+
+  uses-material-design: true  # <-- Add this indentation is important
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: fonts/Ubuntu-Bold.ttf
+        - asset: fonts/Ubuntu-BoldItalic.ttf
+        - asset: fonts/Ubuntu-Italic.ttf
+        - asset: fonts/Ubuntu-Light.ttf
+        - asset: fonts/Ubuntu-LightItalic.ttf
+        - asset: fonts/Ubuntu-Medium.ttf
+        - asset: fonts/Ubuntu-MediumItalic.ttf
+        - asset: fonts/Ubuntu-Regular.ttf
+    - family: EuroSansSTD
+      fonts:
+        - asset: fonts/Euro-Sans-Std-Regular.otf
+          weight: 700
+    - family: Bebas
+      fonts:
+        - asset: fonts/Bebas-Regular.ttf
+    - family: ScriptMT
+      fonts:
+        - asset: fonts/Script-Mt-Bold.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -73,20 +96,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-    - family: Ubuntu
-      fonts:
-        - asset: fonts/Ubuntu-Bold.ttf
-        - asset: fonts/Ubuntu-BoldItalic.ttf
-        - asset: fonts/Ubuntu-Ubuntu-Italic.ttf
-        - asset: fonts/Ubuntu-Light.ttf
-        - asset: fonts/Ubuntu-LightItalic.ttf
-        - asset: fonts/Ubuntu-Medium.ttf
-        - asset: fonts/Ubuntu-MediumItalic.ttf
-        - asset: fonts/Ubuntu-Regular.ttf
-    - family: Euro
-      fonts:
-        - asset: fonts/Euro-Sans-Std-Regular.otf
-    - family: Bebas
-        - asset: fonts/Bebas-Regular.ttf
-    - family: Euro-Sans
-        - asset: fonts/Euro-Sans-Std-Regular.ttf
